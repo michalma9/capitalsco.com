@@ -469,7 +469,11 @@ textarea{resize:vertical;min-height:110px;}
       </div>
       <div class="contact-form-card fade-in">
         <h3 style="font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:var(--space-6);">Send an Enquiry</h3>
-        <form id="enquiryForm" novalidate>
+        <form id="enquiryForm"
+              action="https://formspree.io/f/mbdevyoz"
+              method="POST"
+              novalidate>
+          <input type="hidden" name="_subject" value="New enquiry from capitalsco.com">
           <div class="form-row">
             <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" name="fname" placeholder="John" autocomplete="given-name" required/></div>
             <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" name="lname" placeholder="Smith" autocomplete="family-name" required/></div>
@@ -554,11 +558,11 @@ const menuBtn=document.getElementById('menuToggle'),mobileNav=document.getElemen
 menuBtn.addEventListener('click',()=>{const o=mobileNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
 function closeMobileNav(){mobileNav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}
 window.addEventListener('resize',()=>{if(window.innerWidth>768)closeMobileNav();});
-document.getElementById('enquiryForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const btn=document.getElementById('submitBtn');
-  btn.textContent='Enquiry Sent — We\'ll be in touch';
-  btn.style.background='#437a22';btn.disabled=true;
+document.getElementById('enquiryForm').addEventListener('submit', function() {
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = 'Enquiry sent — thank you';
+  btn.style.background = '#437a22';
+  btn.disabled = true;
 });
 </script>
 </body>
