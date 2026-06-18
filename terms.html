@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Terms of Use — Capital SCO</title>
+<meta name="description" content="Terms of Use for Capital SCO Ltd — the terms governing use of capitalsco.com."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root,[data-theme="light"]{
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Inter','Helvetica Neue',sans-serif;
+  --color-navy:#1a2340;
+  --color-gold:#b8973a;
+  --color-gold-light:#d4af5a;
+  --color-gold-muted:#e8d9a8;
+  --color-bg:#f5f2ec;
+  --color-surface:#faf9f6;
+  --color-surface-2:#ffffff;
+  --color-border:rgba(26,35,64,0.12);
+  --color-divider:rgba(26,35,64,0.07);
+  --color-text:#1a2340;
+  --color-text-muted:#5a6880;
+  --color-text-faint:#9aa3b0;
+  --color-primary:#b8973a;
+  --radius-sm:0.25rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-full:9999px;
+  --shadow-sm:0 1px 3px rgba(26,35,64,0.08);
+  --shadow-md:0 4px 16px rgba(26,35,64,0.10);
+  --content-default:800px;--content-wide:1200px;
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3rem);
+  --space-1:0.25rem;--space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;
+  --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;--space-20:5rem;
+  --transition:180ms cubic-bezier(0.16,1,0.3,1);
+}
+[data-theme="dark"]{
+  --color-bg:#0f1220;--color-surface:#151b2e;--color-surface-2:#1c2438;
+  --color-border:rgba(184,151,58,0.18);--color-divider:rgba(184,151,58,0.08);
+  --color-text:#e8e4d8;--color-text-muted:#9aa3b0;--color-text-faint:#5a6880;
+  --color-primary:#d4af5a;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.3);--shadow-md:0 4px 16px rgba(0,0,0,0.4);
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){
+  --color-bg:#0f1220;--color-surface:#151b2e;--color-surface-2:#1c2438;
+  --color-border:rgba(184,151,58,0.18);--color-divider:rgba(184,151,58,0.08);
+  --color-text:#e8e4d8;--color-text-muted:#9aa3b0;
+  --color-primary:#d4af5a;
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:80px;}
+body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);line-height:1.7;}
+img,svg{display:block;max-width:100%;}
+h1,h2,h3{text-wrap:balance;line-height:1.2;}
+p,li{text-wrap:pretty;}
+a{text-decoration:none;color:inherit;transition:color var(--transition);}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit;}
+:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm);}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}}
+
+.site-header{position:sticky;top:0;z-index:100;background:rgba(245,242,236,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--color-divider);}
+[data-theme="dark"] .site-header{background:rgba(15,18,32,0.93);}
+.nav-inner{max-width:var(--content-wide);margin-inline:auto;padding-inline:var(--space-8);height:72px;display:flex;align-items:center;justify-content:space-between;gap:var(--space-8);}
+.logo-lockup{display:flex;align-items:center;gap:var(--space-3);flex-shrink:0;}
+.logo-svg{width:44px;height:30px;}
+.logo-name{font-family:var(--font-display);font-size:1.4rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-navy);}
+[data-theme="dark"] .logo-name{color:var(--color-text);}
+.nav-back{font-size:var(--text-xs);font-weight:500;padding:var(--space-2) var(--space-5);border-radius:var(--radius-full);border:1px solid var(--color-border);color:var(--color-text-muted);letter-spacing:0.06em;text-transform:uppercase;transition:border-color var(--transition),color var(--transition);}
+.nav-back:hover{border-color:var(--color-primary);color:var(--color-primary);}
+.theme-toggle{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);color:var(--color-text-muted);}
+.theme-toggle:hover{color:var(--color-primary);}
+
+.page-hero{background:var(--color-navy);padding:clamp(var(--space-16),8vw,var(--space-20)) var(--space-8);}
+[data-theme="dark"] .page-hero{background:#0a0d1a;}
+.page-hero-inner{max-width:var(--content-default);margin-inline:auto;}
+.page-eyebrow{font-size:var(--text-xs);letter-spacing:0.22em;text-transform:uppercase;color:var(--color-gold-light);margin-bottom:var(--space-4);font-weight:500;display:block;}
+.page-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:400;color:#f5f2ec;margin-bottom:var(--space-4);}
+.page-meta{font-size:var(--text-sm);color:rgba(245,242,236,0.5);}
+
+.policy-body{padding:clamp(var(--space-12),6vw,var(--space-20)) var(--space-8);}
+.policy-inner{max-width:var(--content-default);margin-inline:auto;}
+
+.toc{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6) var(--space-8);margin-bottom:var(--space-12);}
+.toc-title{font-size:var(--text-xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--color-primary);font-weight:600;margin-bottom:var(--space-4);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:var(--space-2);}
+.toc-list a{font-size:var(--text-sm);color:var(--color-text-muted);display:flex;align-items:center;gap:var(--space-2);}
+.toc-list a:hover{color:var(--color-primary);}
+.toc-list a::before{content:"";display:inline-block;width:16px;height:1px;background:var(--color-gold);flex-shrink:0;}
+
+.policy-section{margin-bottom:var(--space-12);padding-bottom:var(--space-12);border-bottom:1px solid var(--color-divider);}
+.policy-section:last-of-type{border-bottom:none;}
+.section-num{font-size:var(--text-xs);letter-spacing:0.2em;text-transform:uppercase;color:var(--color-primary);font-weight:600;display:block;margin-bottom:var(--space-3);}
+.section-heading{font-family:var(--font-display);font-size:var(--text-xl);font-weight:500;color:var(--color-text);margin-bottom:var(--space-5);}
+.divider-gold{width:32px;height:2px;background:var(--color-gold);margin-bottom:var(--space-6);}
+.policy-text{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.85;max-width:70ch;margin-bottom:var(--space-4);}
+.policy-text:last-child{margin-bottom:0;}
+.policy-list{list-style:none;display:flex;flex-direction:column;gap:var(--space-3);margin:var(--space-4) 0;max-width:70ch;}
+.policy-list li{display:flex;align-items:flex-start;gap:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.75;}
+.policy-list li::before{content:"";flex-shrink:0;width:5px;height:5px;border-radius:50%;background:var(--color-gold);margin-top:0.6em;}
+
+.info-box{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5) var(--space-6);margin:var(--space-5) 0;max-width:70ch;}
+.info-box-label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.14em;color:var(--color-primary);font-weight:600;margin-bottom:var(--space-2);display:block;}
+.info-box-text{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.75;}
+.info-box-text a{color:var(--color-primary);}
+.info-box-text a:hover{text-decoration:underline;}
+
+.warning-box{background:color-mix(in oklab,#b8973a 8%,var(--color-surface));border:1px solid color-mix(in oklab,#b8973a 30%,var(--color-border));border-radius:var(--radius-md);padding:var(--space-5) var(--space-6);margin:var(--space-6) 0;max-width:70ch;}
+.warning-box p{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.75;}
+
+.site-footer{background:#0b0f1e;color:rgba(245,242,236,0.45);}
+.footer-inner{max-width:var(--content-wide);margin-inline:auto;padding:var(--space-8);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4);}
+.footer-legal{font-size:var(--text-xs);}
+.footer-links{display:flex;gap:var(--space-6);}
+.footer-links a{font-size:var(--text-xs);color:rgba(245,242,236,0.3);}
+.footer-links a:hover{color:var(--color-gold-light);}
+
+@media(max-width:768px){
+  .nav-inner{padding-inline:var(--space-4);}
+  .policy-body{padding-inline:var(--space-4);}
+  .page-hero{padding-inline:var(--space-4);}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <nav class="nav-inner" aria-label="Primary navigation">
+    <a href="/" class="logo-lockup" aria-label="Capital SCO home">
+      <svg class="logo-svg" viewBox="0 0 56 36" fill="none" aria-hidden="true">
+        <circle cx="20" cy="18" r="14" fill="#b8973a" opacity="0.9"/>
+        <circle cx="36" cy="18" r="14" fill="#5a6880" opacity="0.85"/>
+        <ellipse cx="28" cy="18" rx="4" ry="9.4" fill="#7a6840" opacity="0.95"/>
+      </svg>
+      <span class="logo-name">Capital SCO</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:var(--space-4);">
+      <a href="/" class="nav-back">&larr; Back to site</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch colour theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="page-hero-inner">
+    <span class="page-eyebrow">Legal</span>
+    <h1 class="page-title" id="page-title">Terms of Use</h1>
+    <p class="page-meta">Last updated: June 2026 &mdash; Capital SCO Ltd</p>
+  </div>
+</section>
+
+<main class="policy-body" id="main">
+  <div class="policy-inner">
+
+    <nav class="toc" aria-label="Contents">
+      <p class="toc-title">Contents</p>
+      <ol class="toc-list" role="list">
+        <li><a href="#acceptance">Acceptance of terms</a></li>
+        <li><a href="#about-site">About this website</a></li>
+        <li><a href="#not-financial-advice">Not financial or investment advice</a></li>
+        <li><a href="#intellectual-property">Intellectual property</a></li>
+        <li><a href="#acceptable-use">Acceptable use</a></li>
+        <li><a href="#third-party-links">Third-party links</a></li>
+        <li><a href="#disclaimer">Disclaimer of warranties</a></li>
+        <li><a href="#limitation">Limitation of liability</a></li>
+        <li><a href="#confidentiality">Confidentiality of enquiries</a></li>
+        <li><a href="#governing-law">Governing law</a></li>
+        <li><a href="#changes">Changes to these terms</a></li>
+        <li><a href="#contact-us">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <!-- Intro -->
+    <div class="policy-section" style="padding-top:0;">
+      <p class="policy-text">Please read these Terms of Use carefully before using <strong>capitalsco.com</strong>. By accessing or using this website, you agree to be bound by these terms. If you do not agree, please do not use the website.</p>
+      <p class="policy-text">These terms apply to all visitors, users, and anyone who accesses or uses this website.</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="policy-section" id="acceptance">
+      <span class="section-num">01</span>
+      <h2 class="section-heading">Acceptance of terms</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">By visiting, browsing, or submitting an enquiry via this website, you confirm that you are at least 18 years of age, have the legal capacity to enter into a binding agreement, and accept these Terms of Use in full.</p>
+      <p class="policy-text">These Terms of Use should be read alongside our <a href="/privacy.html" style="color:var(--color-primary);">Privacy Policy</a>, which forms part of the agreement between you and Capital SCO Ltd when you use this website.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="policy-section" id="about-site">
+      <span class="section-num">02</span>
+      <h2 class="section-heading">About this website</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">This website is operated by <strong>Capital SCO Ltd</strong>, a UK-based investment and acquisition firm registered in Scotland. The website provides general information about our business, our acquisition criteria, and the services we offer to business owners and investors.</p>
+      <p class="policy-text">The website is intended for informational purposes only. Nothing on this website constitutes a contractual offer, commitment, or guarantee of any specific service, transaction, or outcome.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="policy-section" id="not-financial-advice">
+      <span class="section-num">03</span>
+      <h2 class="section-heading">Not financial or investment advice</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <div class="warning-box">
+        <p><strong>Important:</strong> The information on this website does not constitute financial, investment, legal, or tax advice. It is provided for general informational purposes only.</p>
+      </div>
+      <p class="policy-text">Capital SCO Ltd is not authorised or regulated by the Financial Conduct Authority (FCA) to provide financial advice to the public. Nothing on this website should be interpreted as a recommendation to buy, sell, or hold any financial instrument, or to make any specific investment or business decision.</p>
+      <p class="policy-text">If you require financial, legal, or tax advice in relation to a business transaction, you should consult an appropriately qualified and regulated professional adviser.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="policy-section" id="intellectual-property">
+      <span class="section-num">04</span>
+      <h2 class="section-heading">Intellectual property</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">All content on this website — including but not limited to text, logos, graphics, images, layout, and design — is the intellectual property of Capital SCO Ltd or its licensors and is protected by UK and international copyright and trademark law.</p>
+      <p class="policy-text">You may:</p>
+      <ul class="policy-list" role="list">
+        <li>View and print pages from this website for your own personal, non-commercial use</li>
+        <li>Share links to pages on this website</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">You may not:</p>
+      <ul class="policy-list" role="list">
+        <li>Copy, reproduce, republish, upload, post, transmit, or distribute any content from this website without our prior written permission</li>
+        <li>Use the Capital SCO name, logo, or brand assets without written authorisation</li>
+        <li>Use any content from this website for any commercial purpose</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="policy-section" id="acceptable-use">
+      <span class="section-num">05</span>
+      <h2 class="section-heading">Acceptable use</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">When using this website and any contact forms, you agree not to:</p>
+      <ul class="policy-list" role="list">
+        <li>Use the website in any way that violates applicable local, national, or international law or regulation</li>
+        <li>Submit false, misleading, or fraudulent information through any form or communication</li>
+        <li>Attempt to gain unauthorised access to any part of the website or its systems</li>
+        <li>Introduce viruses, malware, or any other harmful material</li>
+        <li>Use automated tools (bots, scrapers, crawlers) to extract data from this website without prior written consent</li>
+        <li>Use the website to send unsolicited commercial communications (spam)</li>
+        <li>Impersonate any person or entity or misrepresent your affiliation with any person or entity</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">We reserve the right to report any breach of acceptable use to the relevant law enforcement authorities and to disclose your identity where we are legally permitted or required to do so.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="policy-section" id="third-party-links">
+      <span class="section-num">06</span>
+      <h2 class="section-heading">Third-party links</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">This website may contain links to third-party websites for your convenience and reference. These links do not constitute an endorsement of those websites, their content, or their operators.</p>
+      <p class="policy-text">We have no control over the content of third-party websites and accept no responsibility or liability for them or for any loss or damage that may arise from your use of them. You access any linked website entirely at your own risk.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="policy-section" id="disclaimer">
+      <span class="section-num">07</span>
+      <h2 class="section-heading">Disclaimer of warranties</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">This website is provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis without any representation or warranty, express or implied. To the fullest extent permitted by law, Capital SCO Ltd makes no warranties regarding:</p>
+      <ul class="policy-list" role="list">
+        <li>The accuracy, completeness, or currentness of any information on this website</li>
+        <li>The uninterrupted or error-free operation of the website</li>
+        <li>The absence of viruses or other harmful components</li>
+        <li>The suitability of the website or its content for any particular purpose</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">We make every reasonable effort to keep information accurate and up to date, but we cannot guarantee that all content reflects the most current position at all times.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="policy-section" id="limitation">
+      <span class="section-num">08</span>
+      <h2 class="section-heading">Limitation of liability</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">To the fullest extent permitted by applicable law, Capital SCO Ltd, its directors, employees, and agents shall not be liable for any direct, indirect, incidental, consequential, or special loss or damage arising out of or in connection with:</p>
+      <ul class="policy-list" role="list">
+        <li>Your use of, or inability to use, this website</li>
+        <li>Any reliance placed on the content of this website</li>
+        <li>Any errors or omissions in the content of this website</li>
+        <li>Any unauthorised access to or alteration of your transmissions or data</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">Nothing in these terms excludes or limits our liability for fraud, death, or personal injury caused by our negligence, or any other liability that cannot be excluded or limited under applicable UK law.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="policy-section" id="confidentiality">
+      <span class="section-num">09</span>
+      <h2 class="section-heading">Confidentiality of enquiries</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">We understand that enquiries about selling a business or seeking investment are sensitive in nature. Capital SCO Ltd treats all initial enquiries and subsequent communications with strict confidentiality.</p>
+      <p class="policy-text">However, please note that submitting an enquiry via this website does not, in itself, create a formal confidentiality agreement or non-disclosure agreement (NDA) between you and Capital SCO Ltd. If you require a formal NDA before disclosing detailed business information, please request this before providing confidential details. We are happy to put one in place.</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="policy-section" id="governing-law">
+      <span class="section-num">10</span>
+      <h2 class="section-heading">Governing law</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">These Terms of Use and any dispute or claim arising out of or in connection with them (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of <strong>Scotland</strong> and the United Kingdom.</p>
+      <p class="policy-text">You agree that the courts of Scotland shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with these Terms of Use or your use of this website.</p>
+    </div>
+
+    <!-- 11 -->
+    <div class="policy-section" id="changes">
+      <span class="section-num">11</span>
+      <h2 class="section-heading">Changes to these terms</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">We reserve the right to update or amend these Terms of Use at any time. Changes will take effect as soon as they are posted on this page, and the &ldquo;Last updated&rdquo; date will be revised accordingly.</p>
+      <p class="policy-text">Your continued use of the website following any changes constitutes your acceptance of the revised terms. We therefore encourage you to review this page periodically.</p>
+    </div>
+
+    <!-- 12 -->
+    <div class="policy-section" id="contact-us">
+      <span class="section-num">12</span>
+      <h2 class="section-heading">Contact us</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">If you have any questions about these Terms of Use, please contact us:</p>
+      <div class="info-box">
+        <span class="info-box-label">Capital SCO Ltd</span>
+        <p class="info-box-text">
+          Email: <a href="mailto:hello@capitalsco.com">hello@capitalsco.com</a><br>
+          Website: <a href="https://capitalsco.com" target="_blank" rel="noopener noreferrer">capitalsco.com</a><br>
+          Registered in Scotland, United Kingdom
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <span class="footer-legal">&copy; 2026 Capital SCO Ltd. All rights reserved. Registered in Scotland.</span>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t)t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'?
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+</script>
+</body>
+</html>
