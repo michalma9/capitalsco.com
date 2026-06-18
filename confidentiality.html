@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Confidentiality — Capital SCO</title>
+<meta name="description" content="Confidentiality commitment from Capital SCO Ltd — how we handle sensitive business information shared during acquisition enquiries."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root,[data-theme="light"]{
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Inter','Helvetica Neue',sans-serif;
+  --color-navy:#1a2340;
+  --color-gold:#b8973a;
+  --color-gold-light:#d4af5a;
+  --color-gold-muted:#e8d9a8;
+  --color-bg:#f5f2ec;
+  --color-surface:#faf9f6;
+  --color-surface-2:#ffffff;
+  --color-border:rgba(26,35,64,0.12);
+  --color-divider:rgba(26,35,64,0.07);
+  --color-text:#1a2340;
+  --color-text-muted:#5a6880;
+  --color-text-faint:#9aa3b0;
+  --color-primary:#b8973a;
+  --radius-sm:0.25rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-full:9999px;
+  --shadow-sm:0 1px 3px rgba(26,35,64,0.08);
+  --shadow-md:0 4px 16px rgba(26,35,64,0.10);
+  --content-default:800px;--content-wide:1200px;
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3rem);
+  --space-1:0.25rem;--space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;
+  --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;--space-20:5rem;
+  --transition:180ms cubic-bezier(0.16,1,0.3,1);
+}
+[data-theme="dark"]{
+  --color-bg:#0f1220;--color-surface:#151b2e;--color-surface-2:#1c2438;
+  --color-border:rgba(184,151,58,0.18);--color-divider:rgba(184,151,58,0.08);
+  --color-text:#e8e4d8;--color-text-muted:#9aa3b0;--color-text-faint:#5a6880;
+  --color-primary:#d4af5a;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.3);--shadow-md:0 4px 16px rgba(0,0,0,0.4);
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){
+  --color-bg:#0f1220;--color-surface:#151b2e;--color-surface-2:#1c2438;
+  --color-border:rgba(184,151,58,0.18);--color-divider:rgba(184,151,58,0.08);
+  --color-text:#e8e4d8;--color-text-muted:#9aa3b0;
+  --color-primary:#d4af5a;
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:80px;}
+body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);line-height:1.7;}
+img,svg{display:block;max-width:100%;}
+h1,h2,h3{text-wrap:balance;line-height:1.2;}
+p,li{text-wrap:pretty;}
+a{text-decoration:none;color:inherit;transition:color var(--transition);}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit;}
+:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm);}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}}
+
+.site-header{position:sticky;top:0;z-index:100;background:rgba(245,242,236,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--color-divider);}
+[data-theme="dark"] .site-header{background:rgba(15,18,32,0.93);}
+.nav-inner{max-width:var(--content-wide);margin-inline:auto;padding-inline:var(--space-8);height:72px;display:flex;align-items:center;justify-content:space-between;gap:var(--space-8);}
+.logo-lockup{display:flex;align-items:center;gap:var(--space-3);flex-shrink:0;}
+.logo-svg{width:44px;height:30px;}
+.logo-name{font-family:var(--font-display);font-size:1.4rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-navy);}
+[data-theme="dark"] .logo-name{color:var(--color-text);}
+.nav-back{font-size:var(--text-xs);font-weight:500;padding:var(--space-2) var(--space-5);border-radius:var(--radius-full);border:1px solid var(--color-border);color:var(--color-text-muted);letter-spacing:0.06em;text-transform:uppercase;transition:border-color var(--transition),color var(--transition);}
+.nav-back:hover{border-color:var(--color-primary);color:var(--color-primary);}
+.theme-toggle{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);color:var(--color-text-muted);}
+.theme-toggle:hover{color:var(--color-primary);}
+
+.page-hero{background:var(--color-navy);padding:clamp(var(--space-16),8vw,var(--space-20)) var(--space-8);}
+[data-theme="dark"] .page-hero{background:#0a0d1a;}
+.page-hero-inner{max-width:var(--content-default);margin-inline:auto;}
+.page-eyebrow{font-size:var(--text-xs);letter-spacing:0.22em;text-transform:uppercase;color:var(--color-gold-light);margin-bottom:var(--space-4);font-weight:500;display:block;}
+.page-title{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:400;color:#f5f2ec;margin-bottom:var(--space-4);}
+.page-meta{font-size:var(--text-sm);color:rgba(245,242,236,0.5);}
+
+/* Commitment banner */
+.commitment-banner{background:color-mix(in oklab,var(--color-gold) 10%,var(--color-surface));border:1px solid color-mix(in oklab,var(--color-gold) 25%,var(--color-border));border-radius:var(--radius-lg);padding:var(--space-8) var(--space-10);margin-bottom:var(--space-12);display:flex;gap:var(--space-6);align-items:flex-start;}
+.commitment-icon{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--color-gold);}
+.commitment-text{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.8;max-width:66ch;}
+.commitment-text strong{color:var(--color-text);}
+
+.policy-body{padding:clamp(var(--space-12),6vw,var(--space-20)) var(--space-8);}
+.policy-inner{max-width:var(--content-default);margin-inline:auto;}
+
+.toc{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6) var(--space-8);margin-bottom:var(--space-12);}
+.toc-title{font-size:var(--text-xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--color-primary);font-weight:600;margin-bottom:var(--space-4);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:var(--space-2);}
+.toc-list a{font-size:var(--text-sm);color:var(--color-text-muted);display:flex;align-items:center;gap:var(--space-2);}
+.toc-list a:hover{color:var(--color-primary);}
+.toc-list a::before{content:"";display:inline-block;width:16px;height:1px;background:var(--color-gold);flex-shrink:0;}
+
+.policy-section{margin-bottom:var(--space-12);padding-bottom:var(--space-12);border-bottom:1px solid var(--color-divider);}
+.policy-section:last-of-type{border-bottom:none;}
+.section-num{font-size:var(--text-xs);letter-spacing:0.2em;text-transform:uppercase;color:var(--color-primary);font-weight:600;display:block;margin-bottom:var(--space-3);}
+.section-heading{font-family:var(--font-display);font-size:var(--text-xl);font-weight:500;color:var(--color-text);margin-bottom:var(--space-5);}
+.divider-gold{width:32px;height:2px;background:var(--color-gold);margin-bottom:var(--space-6);}
+.policy-text{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.85;max-width:70ch;margin-bottom:var(--space-4);}
+.policy-text:last-child{margin-bottom:0;}
+.policy-list{list-style:none;display:flex;flex-direction:column;gap:var(--space-3);margin:var(--space-4) 0;max-width:70ch;}
+.policy-list li{display:flex;align-items:flex-start;gap:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.75;}
+.policy-list li::before{content:"";flex-shrink:0;width:5px;height:5px;border-radius:50%;background:var(--color-gold);margin-top:0.6em;}
+
+.info-box{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5) var(--space-6);margin:var(--space-5) 0;max-width:70ch;}
+.info-box-label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.14em;color:var(--color-primary);font-weight:600;margin-bottom:var(--space-2);display:block;}
+.info-box-text{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.75;}
+.info-box-text a{color:var(--color-primary);}
+.info-box-text a:hover{text-decoration:underline;}
+
+/* NDA CTA */
+.nda-cta{background:var(--color-navy);border-radius:var(--radius-lg);padding:var(--space-8) var(--space-10);margin:var(--space-8) 0;max-width:70ch;}
+[data-theme="dark"] .nda-cta{background:var(--color-surface);}
+.nda-cta-label{font-size:var(--text-xs);letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-muted);font-weight:600;display:block;margin-bottom:var(--space-3);}
+.nda-cta-title{font-family:var(--font-display);font-size:var(--text-xl);color:#f5f2ec;font-weight:400;margin-bottom:var(--space-3);}
+[data-theme="dark"] .nda-cta-title{color:var(--color-text);}
+.nda-cta-text{font-size:var(--text-sm);color:rgba(245,242,236,0.6);line-height:1.75;margin-bottom:var(--space-6);max-width:52ch;}
+[data-theme="dark"] .nda-cta-text{color:var(--color-text-muted);}
+.btn-gold{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);font-weight:600;padding:var(--space-3) var(--space-6);border-radius:var(--radius-full);background:var(--color-gold);color:var(--color-navy);letter-spacing:0.1em;text-transform:uppercase;transition:background var(--transition);}
+.btn-gold:hover{background:var(--color-gold-light);}
+
+.site-footer{background:#0b0f1e;color:rgba(245,242,236,0.45);}
+.footer-inner{max-width:var(--content-wide);margin-inline:auto;padding:var(--space-8);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4);}
+.footer-legal{font-size:var(--text-xs);}
+.footer-links{display:flex;gap:var(--space-6);}
+.footer-links a{font-size:var(--text-xs);color:rgba(245,242,236,0.3);}
+.footer-links a:hover{color:var(--color-gold-light);}
+
+@media(max-width:768px){
+  .nav-inner{padding-inline:var(--space-4);}
+  .policy-body{padding-inline:var(--space-4);}
+  .page-hero{padding-inline:var(--space-4);}
+  .commitment-banner{flex-direction:column;gap:var(--space-4);}
+  .nda-cta{padding:var(--space-6);}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <nav class="nav-inner" aria-label="Primary navigation">
+    <a href="/" class="logo-lockup" aria-label="Capital SCO home">
+      <svg class="logo-svg" viewBox="0 0 56 36" fill="none" aria-hidden="true">
+        <circle cx="20" cy="18" r="14" fill="#b8973a" opacity="0.9"/>
+        <circle cx="36" cy="18" r="14" fill="#5a6880" opacity="0.85"/>
+        <ellipse cx="28" cy="18" rx="4" ry="9.4" fill="#7a6840" opacity="0.95"/>
+      </svg>
+      <span class="logo-name">Capital SCO</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:var(--space-4);">
+      <a href="/" class="nav-back">&larr; Back to site</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch colour theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="page-hero-inner">
+    <span class="page-eyebrow">Legal</span>
+    <h1 class="page-title" id="page-title">Confidentiality</h1>
+    <p class="page-meta">Our commitment to protecting sensitive business information</p>
+  </div>
+</section>
+
+<main class="policy-body" id="main">
+  <div class="policy-inner">
+
+    <!-- Commitment banner -->
+    <div class="commitment-banner" role="note">
+      <div class="commitment-icon" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+      </div>
+      <p class="commitment-text"><strong>Our commitment:</strong> We understand that considering the sale of your business is one of the most significant decisions you will ever make. At Capital SCO, all initial conversations, enquiries, and information shared with us are treated with the utmost discretion and professionalism — as a matter of principle, not just policy.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <p class="toc-title">Contents</p>
+      <ol class="toc-list" role="list">
+        <li><a href="#our-approach">Our approach to confidentiality</a></li>
+        <li><a href="#what-we-protect">What information we protect</a></li>
+        <li><a href="#who-sees-it">Who may see your information</a></li>
+        <li><a href="#initial-enquiry">Initial enquiries</a></li>
+        <li><a href="#formal-nda">Formal NDA</a></li>
+        <li><a href="#employees">Protecting your employees &amp; relationships</a></li>
+        <li><a href="#if-no-deal">If a deal does not proceed</a></li>
+        <li><a href="#contact-us">Request an NDA or contact us</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1 -->
+    <div class="policy-section" id="our-approach">
+      <span class="section-num">01</span>
+      <h2 class="section-heading">Our approach to confidentiality</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">We are operators and business people first. We understand that the most sensitive information in a business transaction is not the numbers — it is the people, the relationships, and the reputation behind them.</p>
+      <p class="policy-text">Whether you are at the very early stage of exploring a sale, or deep in due diligence, Capital SCO will handle your information with the same care we would expect applied to our own.</p>
+      <p class="policy-text">Confidentiality is not a box we tick — it is a professional and ethical standard we hold ourselves to at every stage of the process.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="policy-section" id="what-we-protect">
+      <span class="section-num">02</span>
+      <h2 class="section-heading">What information we protect</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">We treat the following categories of information as strictly confidential:</p>
+      <ul class="policy-list" role="list">
+        <li>The identity of your business and the fact that it may be for sale</li>
+        <li>Financial information — revenue, profit, margins, debts, and liabilities</li>
+        <li>Customer and supplier relationships, contracts, and pricing</li>
+        <li>Employee details, structures, and remuneration</li>
+        <li>Operational systems, processes, and intellectual property</li>
+        <li>Any strategic or commercially sensitive information shared during discussions</li>
+        <li>The existence and content of any negotiations or discussions between us</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="policy-section" id="who-sees-it">
+      <span class="section-num">03</span>
+      <h2 class="section-heading">Who may see your information</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">Your information is shared only on a strict need-to-know basis. Access is limited to:</p>
+      <ul class="policy-list" role="list">
+        <li><strong>Capital SCO principals</strong> — the core team directly involved in evaluating and progressing the transaction</li>
+        <li><strong>Professional advisors</strong> — solicitors, accountants, or other specialists engaged to support a transaction, and only where this is necessary and with your knowledge</li>
+        <li><strong>Finance providers</strong> — only where relevant to completing a transaction and only with your prior agreement</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">We will never share your information with competitors, brokers, or other third parties without your explicit written consent.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="policy-section" id="initial-enquiry">
+      <span class="section-num">04</span>
+      <h2 class="section-heading">Initial enquiries</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">Your initial enquiry via our website contact form is completely confidential and carries no obligation on either side. You are not committing to anything by getting in touch.</p>
+      <p class="policy-text">At this stage, we ask only for the basics: your name, contact details, and the nature of your enquiry. We do not ask for — and you should not include — sensitive financial or operational details in an initial contact form.</p>
+      <div class="info-box">
+        <span class="info-box-label">Good to know</span>
+        <p class="info-box-text">An initial enquiry is simply the start of a conversation. There is no pressure, no commitment, and no obligation. Many business owners simply want to understand what their options look like before making any decision.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="policy-section" id="formal-nda">
+      <span class="section-num">05</span>
+      <h2 class="section-heading">Formal NDA</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">Before any detailed financial, operational, or commercially sensitive information is exchanged, we are happy to enter into a formal <strong>Non-Disclosure Agreement (NDA)</strong> with you.</p>
+      <p class="policy-text">An NDA creates a legally binding obligation of confidentiality on both parties. It clearly defines:</p>
+      <ul class="policy-list" role="list">
+        <li>What information is considered confidential</li>
+        <li>How it may and may not be used</li>
+        <li>Who it may be disclosed to</li>
+        <li>The duration of the confidentiality obligation</li>
+        <li>The legal remedies available if confidentiality is breached</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">If you would like a mutual NDA in place before sharing detailed information, please request one — we will arrange this promptly and without fuss.</p>
+
+      <div class="nda-cta">
+        <span class="nda-cta-label">Ready to talk?</span>
+        <h3 class="nda-cta-title">Request a formal NDA</h3>
+        <p class="nda-cta-text">Simply get in touch and let us know you would like an NDA in place before proceeding. We will have one with you quickly so you can share information with confidence.</p>
+        <a href="/#contact" class="btn-gold">Get in touch &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="policy-section" id="employees">
+      <span class="section-num">06</span>
+      <h2 class="section-heading">Protecting your employees &amp; relationships</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">We understand that one of the greatest concerns for any business owner considering a sale is the potential impact on staff, customers, and suppliers if news of discussions were to leak prematurely.</p>
+      <p class="policy-text">Capital SCO will never approach your employees, customers, or suppliers directly without your explicit permission and without a clear mutual understanding of how and when that will happen. Premature disclosure can damage businesses and people — we take that seriously.</p>
+      <p class="policy-text">Throughout any evaluation and due diligence process, we work with you to determine the right time and manner for any broader disclosure, and we follow your lead entirely on this.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="policy-section" id="if-no-deal">
+      <span class="section-num">07</span>
+      <h2 class="section-heading">If a deal does not proceed</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">Not every conversation leads to a transaction, and that is entirely fine. If discussions do not progress — for any reason — we will:</p>
+      <ul class="policy-list" role="list">
+        <li>Cease using any confidential information you have shared for any purpose</li>
+        <li>Return or destroy confidential documents if requested</li>
+        <li>Retain your basic contact details only as required by our data retention policy (see our <a href="/privacy.html" style="color:var(--color-primary);">Privacy Policy</a>)</li>
+        <li>Never use information gained during discussions to approach your employees, customers, or suppliers</li>
+        <li>Maintain confidentiality obligations indefinitely in relation to commercially sensitive information</li>
+      </ul>
+      <p class="policy-text" style="margin-top:var(--space-5);">Our reputation is built on trust. We treat every conversation — successful or not — with the same standard of integrity.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="policy-section" id="contact-us">
+      <span class="section-num">08</span>
+      <h2 class="section-heading">Request an NDA or contact us</h2>
+      <div class="divider-gold" aria-hidden="true"></div>
+      <p class="policy-text">If you have any questions about how we handle confidential information, wish to request a formal NDA before proceeding, or simply want to start a confidential conversation about your business, please get in touch.</p>
+      <div class="info-box">
+        <span class="info-box-label">Capital SCO Ltd — Confidential Enquiries</span>
+        <p class="info-box-text">
+          Email: <a href="mailto:hello@capitalsco.com">hello@capitalsco.com</a><br>
+          Website: <a href="https://capitalsco.com/#contact" target="_blank" rel="noopener noreferrer">capitalsco.com</a><br><br>
+          All communications are treated as strictly confidential from first contact.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <span class="footer-legal">&copy; 2026 Capital SCO Ltd. All rights reserved. Registered in Scotland.</span>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="/confidentiality.html">Confidentiality</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t)t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'?
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+</script>
+</body>
+</html>
